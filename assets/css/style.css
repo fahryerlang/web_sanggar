@@ -260,6 +260,14 @@ button {
   z-index: 1001;
 }
 
+.navbar__logo-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+}
+
 .navbar__logo-icon {
   width: 42px;
   height: 42px;
@@ -392,16 +400,15 @@ button {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: #000;
 }
 
 .hero__bg {
   position: absolute;
   inset: 0;
-  /* Replace this gradient with an actual image:
-     background: url('../img/hero-bg.jpg') center/cover no-repeat; */
-  background:
-    linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 40%, #2a2218 70%, #1a1207 100%);
-  z-index: -2;
+  background: url('../img/MAR_94.jpg') center/cover no-repeat;
+  opacity: 0.35;
+  z-index: 0;
 }
 
 .hero__overlay {
@@ -409,11 +416,12 @@ button {
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.55) 0%,
-    rgba(0, 0, 0, 0.35) 50%,
-    rgba(0, 0, 0, 0.7) 100%
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.4) 70%,
+    rgba(0, 0, 0, 0.75) 100%
   );
-  z-index: -1;
+  z-index: 1;
 }
 
 .hero__content {
@@ -421,6 +429,8 @@ button {
   padding: 0 clamp(1.5rem, 5vw, 4rem);
   max-width: 900px;
   animation: heroFadeIn 1.2s ease-out both;
+  position: relative;
+  z-index: 2;
 }
 
 @keyframes heroFadeIn {
@@ -478,13 +488,16 @@ button {
 .hero__scroll-indicator {
   position: absolute;
   bottom: 2.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
   animation: heroFadeIn 1.2s ease-out 0.6s both;
+  z-index: 2;
 }
 
 .hero__scroll-indicator span {
@@ -583,6 +596,10 @@ button {
   grid-template-columns: 1fr 1fr;
   gap: clamp(2rem, 5vw, 5rem);
   align-items: center;
+}
+
+.why-us__row:last-child {
+  margin-bottom: 0;
 }
 
 .why-us__row--reverse {
@@ -761,6 +778,11 @@ button {
   align-items: stretch;
 }
 
+.kelas__grid--two {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
+}
+
 .kelas__card {
   background: var(--clr-white-pure);
   border: 1px solid var(--clr-gray-200);
@@ -877,6 +899,159 @@ button {
 
 .kelas__card .btn {
   margin-top: auto;
+}
+
+/* Kelas Info (shared section) */
+.kelas__info {
+  max-width: 1100px;
+  margin: var(--space-3xl) auto 0;
+  padding: 0 clamp(1.5rem, 4vw, 3rem);
+}
+
+.kelas__info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-3xl);
+}
+
+.kelas__info-block {
+  text-align: center;
+  padding: var(--space-lg);
+  background: var(--clr-gray-100);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition);
+}
+
+.kelas__info-block:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+}
+
+.kelas__info-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(232, 134, 12, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-sm);
+}
+
+.kelas__info-title {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-md);
+  font-weight: 700;
+  color: var(--clr-black);
+  margin-bottom: 0.5rem;
+}
+
+.kelas__info-desc {
+  font-size: var(--fs-sm);
+  color: var(--clr-gray-500);
+  line-height: 1.7;
+}
+
+/* Pricing */
+.kelas__pricing {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--clr-black);
+  border-radius: var(--radius-lg);
+  padding: clamp(2rem, 4vw, 3rem);
+}
+
+.kelas__pricing-title {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-lg);
+  font-weight: 800;
+  color: var(--clr-white-pure);
+  margin-bottom: var(--space-lg);
+}
+
+.kelas__pricing-items {
+  margin-bottom: var(--space-lg);
+}
+
+.kelas__pricing-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--clr-black-soft);
+  font-size: var(--fs-sm);
+  color: var(--clr-gray-400);
+}
+
+.kelas__pricing-row--total {
+  border-bottom: none;
+  border-top: 2px solid var(--clr-accent);
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+}
+
+.kelas__pricing-value {
+  font-family: var(--ff-heading);
+  font-weight: 700;
+  color: var(--clr-white-pure);
+}
+
+.kelas__pricing-value--total {
+  font-size: var(--fs-lg);
+  color: var(--clr-accent);
+}
+
+.kelas__pricing-discount {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--clr-accent);
+  background: rgba(232, 134, 12, 0.15);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  margin-left: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.kelas__pricing-note {
+  font-size: var(--fs-sm);
+  color: var(--clr-gray-400);
+  margin-bottom: var(--space-lg);
+  line-height: 1.6;
+}
+
+.kelas__pricing-note strong {
+  color: var(--clr-white-pure);
+}
+
+/* ── WHATSAPP FLOAT ────────────────────────────────── */
+.whatsapp-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  transition: all var(--transition);
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+  color: #fff;
+}
+
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
 }
 
 /* ── TESTIMONIAL ───────────────────────────────────── */
@@ -1246,6 +1421,16 @@ button {
     background: var(--clr-white-pure);
   }
 
+  /* Override scrolled link colors when mobile menu is open */
+  .navbar--scrolled .navbar__menu--open .navbar__link {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .navbar--scrolled .navbar__menu--open .navbar__link:hover,
+  .navbar--scrolled .navbar__menu--open .navbar__link--active {
+    color: var(--clr-accent);
+  }
+
   /* Why Us */
   .why-us__row {
     grid-template-columns: 1fr;
@@ -1262,12 +1447,38 @@ button {
     max-width: 440px;
   }
 
+  .kelas__grid--two {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+  }
+
   .kelas__card--popular {
     transform: none;
   }
 
   .kelas__card--popular:hover {
     transform: translateY(-6px);
+  }
+
+  .kelas__info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kelas__pricing-row {
+    font-size: var(--fs-xs);
+  }
+
+  /* WhatsApp */
+  .whatsapp-float {
+    bottom: 1.2rem;
+    right: 1.2rem;
+    width: 52px;
+    height: 52px;
+  }
+
+  .whatsapp-float svg {
+    width: 26px;
+    height: 26px;
   }
 
   /* Kontak */
