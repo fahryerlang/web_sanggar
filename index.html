@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanggar Ananda — The Stage is Yours</title>
+  <meta name="description" content="Sanggar Ananda — Sekolah Seni Peran & Teater terbaik di Indonesia. Didirikan oleh Aditya Gumay. Wujudkan mimpi menjadi bintang." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#hero" class="navbar__logo">
+        <span class="navbar__logo-icon">SA</span>
+        <span class="navbar__logo-text">Sanggar Ananda</span>
+      </a>
+
+      <nav class="navbar__menu" id="navMenu">
+        <ul class="navbar__list">
+          <li class="navbar__item"><a href="#hero" class="navbar__link">Beranda</a></li>
+          <li class="navbar__item"><a href="#why-us" class="navbar__link">Tentang</a></li>
+          <li class="navbar__item"><a href="#alumni" class="navbar__link">Alumni</a></li>
+          <li class="navbar__item"><a href="#kelas" class="navbar__link">Kelas</a></li>
+          <li class="navbar__item"><a href="#kontak" class="navbar__link">Kontak</a></li>
+        </ul>
+        <a href="#kelas" class="navbar__cta navbar__cta--mobile">Daftar Sekarang</a>
+      </nav>
+
+      <a href="#kelas" class="navbar__cta navbar__cta--desktop">Daftar Sekarang</a>
+
+      <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <!-- Placeholder gradient background — replace with real image/video -->
+    <div class="hero__bg"></div>
+
+    <div class="hero__content">
+      <p class="hero__label">Est. 1981 — Jakarta, Indonesia</p>
+      <h1 class="hero__title">The Stage<br />is <span class="hero__title--accent">Yours.</span></h1>
+      <p class="hero__subtitle">Sanggar seni peran pertama &amp; terbesar di Indonesia.<br />Melahirkan bintang panggung &amp; layar lebar sejak 1981.</p>
+      <div class="hero__actions">
+        <a href="#kelas" class="btn btn--primary">Mulai Perjalananmu</a>
+        <a href="#why-us" class="btn btn--outline">Kenali Kami</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-indicator">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS BAR ===================== -->
+  <section class="stats">
+    <div class="stats__container">
+      <div class="stats__item">
+        <span class="stats__number" data-target="40">0</span><span class="stats__plus">+</span>
+        <span class="stats__label">Tahun Berdiri</span>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__item">
+        <span class="stats__number" data-target="5000">0</span><span class="stats__plus">+</span>
+        <span class="stats__label">Alumni Terdaftar</span>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__item">
+        <span class="stats__number" data-target="100">0</span><span class="stats__plus">+</span>
+        <span class="stats__label">Produksi Film & Teater</span>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__item">
+        <span class="stats__number" data-target="50">0</span><span class="stats__plus">+</span>
+        <span class="stats__label">Penghargaan</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY US ===================== -->
+  <section class="why-us" id="why-us">
+    <div class="why-us__header">
+      <p class="section-label">Mengapa Sanggar Ananda?</p>
+      <h2 class="section-title">Bukan Sekadar <span class="text--accent">Kursus Akting</span></h2>
+      <p class="section-subtitle">Kami adalah rumah bagi mereka yang bermimpi besar. Dibangun di atas visi seorang maestro, Sanggar Ananda telah menjadi kiblat seni peran Indonesia.</p>
+    </div>
+
+    <!-- Row 1: Text Left, Image Right -->
+    <div class="why-us__row">
+      <div class="why-us__text reveal reveal--left">
+        <div class="why-us__icon-box">
+          <i data-lucide="award" class="why-us__icon"></i>
+        </div>
+        <h3 class="why-us__row-title">Didirikan oleh Aditya Gumay</h3>
+        <p class="why-us__row-desc">Maestro seni peran Indonesia dengan pengalaman lebih dari empat dekade di industri perfilman dan teater. Beliau telah mengarahkan ratusan produksi dan membimbing ribuan aktor berbakat menjadi bintang.</p>
+      </div>
+      <div class="why-us__image reveal reveal--right">
+        <!-- Replace src with actual photo -->
+        <div class="why-us__image-placeholder">
+          <i data-lucide="camera" style="width:48px;height:48px;color:var(--clr-accent);"></i>
+          <span>Foto Aditya Gumay</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Image Left, Text Right -->
+    <div class="why-us__row why-us__row--reverse">
+      <div class="why-us__text reveal reveal--right">
+        <div class="why-us__icon-box">
+          <i data-lucide="clapperboard" class="why-us__icon"></i>
+        </div>
+        <h3 class="why-us__row-title">Kurikulum Standar Industri</h3>
+        <p class="why-us__row-desc">Metode pelatihan kami menggabungkan teknik Stanislavski, Meisner, dan tradisi teater Indonesia. Setiap murid mendapatkan pengalaman langsung di depan kamera dan di atas panggung.</p>
+      </div>
+      <div class="why-us__image reveal reveal--left">
+        <div class="why-us__image-placeholder">
+          <i data-lucide="video" style="width:48px;height:48px;color:var(--clr-accent);"></i>
+          <span>Foto Kelas Akting</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 3: Text Left, Image Right -->
+    <div class="why-us__row">
+      <div class="why-us__text reveal reveal--left">
+        <div class="why-us__icon-box">
+          <i data-lucide="star" class="why-us__icon"></i>
+        </div>
+        <h3 class="why-us__row-title">Jaringan Industri Terluas</h3>
+        <p class="why-us__row-desc">Alumni Sanggar Ananda tersebar di seluruh lini industri hiburan Indonesia — dari layar lebar, televisi, hingga panggung teater nasional. Bergabung berarti membuka pintu ke jaringan eksklusif.</p>
+      </div>
+      <div class="why-us__image reveal reveal--right">
+        <div class="why-us__image-placeholder">
+          <i data-lucide="users" style="width:48px;height:48px;color:var(--clr-accent);"></i>
+          <span>Foto Komunitas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ALUMNI (Hall of Fame) ===================== -->
+  <section class="alumni" id="alumni">
+    <div class="alumni__header">
+      <p class="section-label">Hall of Fame</p>
+      <h2 class="section-title">Mereka Memulai <span class="text--accent">Di Sini</span></h2>
+      <p class="section-subtitle">Dari panggung kecil Sanggar Ananda, mereka melangkah menjadi ikon industri hiburan Indonesia.</p>
+    </div>
+
+    <div class="alumni__grid">
+      <!-- Alumni Card 1 -->
+      <article class="alumni__card reveal">
+        <div class="alumni__card-img">
+          <div class="alumni__card-placeholder">
+            <i data-lucide="user" style="width:40px;height:40px;"></i>
+          </div>
+        </div>
+        <div class="alumni__card-info">
+          <h4 class="alumni__card-name">Ruben Onsu</h4>
+          <p class="alumni__card-role">Presenter & Aktor</p>
+        </div>
+      </article>
+
+      <!-- Alumni Card 2 -->
+      <article class="alumni__card reveal">
+        <div class="alumni__card-img">
+          <div class="alumni__card-placeholder">
+            <i data-lucide="user" style="width:40px;height:40px;"></i>
+          </div>
+        </div>
+        <div class="alumni__card-info">
+          <h4 class="alumni__card-name">Dude Harlino</h4>
+          <p class="alumni__card-role">Aktor Film & TV</p>
+        </div>
+      </article>
+
+      <!-- Alumni Card 3 -->
+      <article class="alumni__card reveal">
+        <div class="alumni__card-img">
+          <div class="alumni__card-placeholder">
+            <i data-lucide="user" style="width:40px;height:40px;"></i>
+          </div>
+        </div>
+        <div class="alumni__card-info">
+          <h4 class="alumni__card-name">Nikita Willy</h4>
+          <p class="alumni__card-role">Aktris & Model</p>
+        </div>
+      </article>
+
+      <!-- Alumni Card 4 -->
+      <article class="alumni__card reveal">
+        <div class="alumni__card-img">
+          <div class="alumni__card-placeholder">
+            <i data-lucide="user" style="width:40px;height:40px;"></i>
+          </div>
+        </div>
+        <div class="alumni__card-info">
+          <h4 class="alumni__card-name">Baim Wong</h4>
+          <p class="alumni__card-role">Aktor & Content Creator</p>
+        </div>
+      </article>
+
+      <!-- Alumni Card 5 -->
+      <article class="alumni__card reveal">
+        <div class="alumni__card-img">
+          <div class="alumni__card-placeholder">
+            <i data-lucide="user" style="width:40px;height:40px;"></i>
+          </div>
+        </div>
+        <div class="alumni__card-info">
+          <h4 class="alumni__card-name">Citra Kirana</h4>
+          <p class="alumni__card-role">Aktris TV & Film</p>
+        </div>
+      </article>
+
+      <!-- Alumni Card 6 -->
+      <article class="alumni__card reveal">
+        <div class="alumni__card-img">
+          <div class="alumni__card-placeholder">
+            <i data-lucide="user" style="width:40px;height:40px;"></i>
+          </div>
+        </div>
+        <div class="alumni__card-info">
+          <h4 class="alumni__card-name">Roger Danuarta</h4>
+          <p class="alumni__card-role">Aktor & Musisi</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== KELAS & HARGA ===================== -->
+  <section class="kelas" id="kelas">
+    <div class="kelas__header">
+      <p class="section-label">Program Kelas</p>
+      <h2 class="section-title">Pilih <span class="text--accent">Kelasmu</span></h2>
+      <p class="section-subtitle">Tiga program dirancang khusus untuk setiap level — dari pemula hingga profesional.</p>
+    </div>
+
+    <div class="kelas__grid">
+      <!-- Card 1 — Basic -->
+      <article class="kelas__card reveal">
+        <div class="kelas__card-badge">Pemula</div>
+        <h3 class="kelas__card-title">Kelas Dasar</h3>
+        <p class="kelas__card-desc">Fondasi seni peran untuk pemula. Belajar olah vokal, ekspresi, dan improvisasi dasar bersama mentor berpengalaman.</p>
+        <div class="kelas__card-price">
+          <span class="kelas__card-currency">Rp</span>
+          <span class="kelas__card-amount">1.500.000</span>
+          <span class="kelas__card-period">/ 3 Bulan</span>
+        </div>
+        <ul class="kelas__card-features">
+          <li><i data-lucide="check" class="kelas__check"></i> 12x Pertemuan</li>
+          <li><i data-lucide="check" class="kelas__check"></i> Olah Vokal & Tubuh</li>
+          <li><i data-lucide="check" class="kelas__check"></i> Improvisasi Dasar</li>
+          <li><i data-lucide="check" class="kelas__check"></i> Sertifikat Kelulusan</li>
+        </ul>
+        <a href="#kontak" class="btn btn--dark">Daftar Kelas Dasar</a>
+      </article>
+
+      <!-- Card 2 — Intermediate (Popular) -->
+      <article class="kelas__card kelas__card--popular reveal">
+        <div class="kelas__card-badge kelas__card-badge--popular">Paling Populer</div>
+        <h3 class="kelas__card-title">Kelas Menengah</h3>
+        <p class="kelas__card-desc">Level lanjutan dengan praktik di depan kamera. Dibimbing langsung oleh mentor dari industri perfilman Indonesia.</p>
+        <div class="kelas__card-price">
+          <span class="kelas__card-currency">Rp</span>
+          <span class="kelas__card-amount">3.000.000</span>
+          <span class="kelas__card-period">/ 3 Bulan</span>
+        </div>
+        <ul class="kelas__card-features">
+          <li><i data-lucide="check" class="kelas__check"></i> 16x Pertemuan</li>
+          <li><i data-lucide="check" class="kelas__check"></i> Acting for Camera</li>
+          <li><i data-lucide="check" class="kelas__check"></i> Monolog & Dialog</li>
+          <li><i data-lucide="check" class="kelas__check"></i> Showcase Pementasan</li>
+          <li><i data-lucide="check" class="kelas__check"></i> Akses Casting Call</li>
+        </ul>
+        <a href="#kontak" class="btn btn--primary">Daftar Kelas Menengah</a>
+      </article>
+
+      <!-- Card 3 — Pro -->
+      <article class="kelas__card reveal">
+        <div class="kelas__card-badge">Profesional</div>
+        <h3 class="kelas__card-title">Kelas Master</h3>
+        <p class="kelas__card-desc">Untuk aktor serius yang ingin berkarier di industri. Pelatihan intensif dengan akses langsung ke jaringan produksi.</p>
+        <div class="kelas__card-price">
+          <span class="kelas__card-currency">Rp</span>
+          <span class="kelas__card-amount">5.500.000</span>
+          <span class="kelas__card-period">/ 3 Bulan</span>
+        </div>
+        <ul class="kelas__card-features">
+          <li><i data-lucide="check" class="kelas__check"></i> 20x Pertemuan</li>
+          <li><i data-lucide="check" class="kelas__check"></i> Directing & Screenwriting</li>
+          <li><i data-lucide="check" class="kelas__check"></i> Produksi Film Pendek</li>
+          <li><i data-lucide="check" class="kelas__check"></i> Portfolio Profesional</li>
+          <li><i data-lucide="check" class="kelas__check"></i> Mentorship Pribadi</li>
+        </ul>
+        <a href="#kontak" class="btn btn--dark">Daftar Kelas Master</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIAL ===================== -->
+  <section class="testimonial">
+    <div class="testimonial__container">
+      <div class="testimonial__quote reveal">
+        <i data-lucide="quote" style="width:48px;height:48px;color:var(--clr-accent);opacity:.5;"></i>
+        <blockquote class="testimonial__text">
+          "Sanggar Ananda bukan hanya mengajarkan saya berakting — tapi mengajarkan saya memahami kehidupan. Di sinilah saya menemukan diri saya yang sebenarnya."
+        </blockquote>
+        <div class="testimonial__author">
+          <div class="testimonial__author-avatar">
+            <i data-lucide="user" style="width:24px;height:24px;"></i>
+          </div>
+          <div>
+            <p class="testimonial__author-name">Alumni Angkatan 2015</p>
+            <p class="testimonial__author-role">Aktor Film Nasional</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== KONTAK / CTA ===================== -->
+  <section class="kontak" id="kontak">
+    <div class="kontak__container">
+      <div class="kontak__text reveal reveal--left">
+        <p class="section-label">Hubungi Kami</p>
+        <h2 class="section-title section-title--left">Siap Mewujudkan <span class="text--accent">Mimpimu?</span></h2>
+        <p class="kontak__desc">Langkah pertama menuju panggung besar dimulai dari sini. Hubungi kami atau kunjungi Sanggar Ananda untuk konsultasi gratis.</p>
+
+        <div class="kontak__info">
+          <div class="kontak__info-item">
+            <i data-lucide="map-pin" class="kontak__info-icon"></i>
+            <div>
+              <strong>Alamat</strong>
+              <p>Jl. Pejaten Barat No. 1A, Jakarta Selatan 12510</p>
+            </div>
+          </div>
+          <div class="kontak__info-item">
+            <i data-lucide="phone" class="kontak__info-icon"></i>
+            <div>
+              <strong>Telepon</strong>
+              <p>+62 21 7884 5678</p>
+            </div>
+          </div>
+          <div class="kontak__info-item">
+            <i data-lucide="mail" class="kontak__info-icon"></i>
+            <div>
+              <strong>Email</strong>
+              <p>info@sanggarananda.co.id</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="kontak__form reveal reveal--right" id="contactForm">
+        <div class="kontak__form-group">
+          <label for="nama" class="kontak__form-label">Nama Lengkap</label>
+          <input type="text" id="nama" class="kontak__form-input" placeholder="Masukkan nama lengkap" required />
+        </div>
+        <div class="kontak__form-group">
+          <label for="email" class="kontak__form-label">Email</label>
+          <input type="email" id="email" class="kontak__form-input" placeholder="Masukkan alamat email" required />
+        </div>
+        <div class="kontak__form-group">
+          <label for="telepon" class="kontak__form-label">No. Telepon</label>
+          <input type="tel" id="telepon" class="kontak__form-input" placeholder="Masukkan nomor telepon" />
+        </div>
+        <div class="kontak__form-group">
+          <label for="pesan" class="kontak__form-label">Pesan</label>
+          <textarea id="pesan" class="kontak__form-input kontak__form-textarea" placeholder="Tulis pesan atau pertanyaanmu" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <a href="#hero" class="footer__logo">
+          <span class="navbar__logo-icon">SA</span>
+          <span class="navbar__logo-text">Sanggar Ananda</span>
+        </a>
+        <p class="footer__tagline">Melahirkan bintang panggung &amp; layar lebar sejak 1981. Sekolah seni peran pertama dan terbesar di Indonesia.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Youtube"><i data-lucide="youtube"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__links-title">Navigasi</h4>
+        <ul>
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#why-us">Tentang Kami</a></li>
+          <li><a href="#alumni">Alumni</a></li>
+          <li><a href="#kelas">Program Kelas</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__links-title">Program</h4>
+        <ul>
+          <li><a href="#kelas">Kelas Dasar</a></li>
+          <li><a href="#kelas">Kelas Menengah</a></li>
+          <li><a href="#kelas">Kelas Master</a></li>
+          <li><a href="#kontak">Konsultasi Gratis</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__links-title">Info</h4>
+        <ul>
+          <li><a href="#">Kebijakan Privasi</a></li>
+          <li><a href="#">Syarat & Ketentuan</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 Sanggar Ananda. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Main Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
